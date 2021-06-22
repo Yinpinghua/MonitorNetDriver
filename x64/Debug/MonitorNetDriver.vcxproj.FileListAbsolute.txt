@@ -1,0 +1,2 @@
+G:\coding\MonitorNetDriver\x64\Debug\MonitorNetDriver.sys
+G:\coding\MonitorNetDriver\x64\Debug\MonitorNetDriver.pdb

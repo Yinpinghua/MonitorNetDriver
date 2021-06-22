@@ -1,0 +1,768 @@
+﻿生成启动时间为 2021/1/22 11:26:24。
+日志记录详细程度设置为: Normal。     1>项目“G:\coding\MonitorNetDriver\MonitorNetDriver.vcxproj”在节点 2 上(Build 个目标)。
+     1>DriverBuildNotifications:
+         Building 'MonitorNetDriver' with toolset 'WindowsKernelModeDriver10.0' and the 'Desktop' target platform.
+         Using KMDF 1.15.
+       PrepareForBuild:
+         正在创建目录“Debug\MonitorNetDriver.tlog\”。
+       InitializeBuildStatus:
+         正在创建“Debug\MonitorNetDriver.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       StampInf:
+         F:\Windows Kits\10\bin\10.0.18362.0\x86\stampinf.exe -d "*" -a "x86" -v "*" -k "1.15"  -x -f Debug\MonitorNetDriver.inf 
+         Copying "G:\coding\MonitorNetDriver\MonitorNetDriver.inf" to "Debug\MonitorNetDriver.inf" for stamping
+         Stamping Debug\MonitorNetDriver.inf
+         Stamping [Version] section with DriverVer=01/22/2021,11.26.24.746
+       ClCompile:
+         D:\soft_install\vs2019\Enterprise\VC\Tools\MSVC\14.28.29333\bin\HostX86\x86\CL.exe /c /IDebug\ /Zi /nologo /W4 /WX /diagnostics:column /Od /Oi /Oy- /D _X86_=1 /D i386=1 /D STD_CALL /D DEPRECATE_DDK_FUNCTIONS=1 /D MSC_NOOPT /D _WIN32_WINNT=0x0A00 /D WINVER=0x0A00 /D WINNT=1 /D NTDDI_VERSION=0x0A000007 /D DBG=1 /GF /Gm- /Zp8 /GS /guard:cf /Gy /fp:precise /Qspectre /Zc:wchar_t- /Zc:forScope /Zc:inline /GR- /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gz /wd4748 /wd4603 /wd4627 /wd4986 /wd4987 /wd4996 /FI"F:\Windows Kits\10\Include\10.0.18362.0\shared\warning.h" /analyze- /FC /errorReport:prompt /kernel -cbstring /d1import_no_registry /d2AllowCompatibleILVersions /d2Zi+ MonitorNetDriver.c WFP_Network.c
+         MonitorNetDriver.c
+     1>G:\coding\MonitorNetDriver\WFP_Network.h(1,1): error C2220: 以下警告被视为错误
+     1>G:\coding\MonitorNetDriver\WFP_Network.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9006,6): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9013,6): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9018,6): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9026,6): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9193,14): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9200,14): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9205,14): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9213,14): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9232,10): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9233,6): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(10333,10): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(10370,31): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2528,24): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2528,24): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2529,16): warning C4142: "UINT32": 类型的良性重定义
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(81): message : 参见“UINT32”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2529,9): error C2370: “UINT32”: 重定义；不同的存储类
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(81): message : 参见“UINT32”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2529,16): error C2146: 语法错误: 缺少“;”(在标识符“queryFlags”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2529,16): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2530,12): error C2371: “FWPS_PACKET_LIST_INFORMATION0”: 重定义；不同的基类型
+       F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2522): message : 参见“FWPS_PACKET_LIST_INFORMATION0”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2530,41): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2530,41): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2531,4): error C2059: 语法错误:“)”
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2531,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2552,30): error C2146: 语法错误: 缺少“)”(在标识符“netBufferList”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2552,30): error C2081: “PNET_BUFFER_LIST”: 形参表中的名称非法
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2552,30): error C2061: 语法错误: 标识符“netBufferList”
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2552,30): error C2059: 语法错误:“;”
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2553,4): error C2059: 语法错误:“)”
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2752,48): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2752,48): error C2081: “NET_BUFFER_LIST”: 形参表中的名称非法
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2752,48): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2753,30): error C2371: “BOOLEAN”: 重定义；不同的基类型
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ntdef.h(1603): message : 参见“BOOLEAN”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2753,38): error C2146: 语法错误: 缺少“;”(在标识符“dispatchLevel”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2753,38): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2754,25): error C2059: 语法错误:“)”
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2754,26): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2766,28): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2766,28): error C2081: “NET_BUFFER_LIST”: 形参表中的名称非法
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2766,28): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2767,4): error C2059: 语法错误:“)”
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2766,31): error C2040: “netBufferList”:“int **”与“int *”的间接寻址级别不同
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2767,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2773,24): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2773,24): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2774,4): error C2059: 语法错误:“)”
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2774,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2780,27): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2780,27): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2781,13): error C2040: “NDIS_HANDLE”:“int”与“PVOID”的间接寻址级别不同
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2781,25): error C2146: 语法错误: 缺少“;”(在标识符“netBufferListPoolHandle”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2781,25): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2782,13): error C2040: “NDIS_HANDLE”:“int”与“PVOID”的间接寻址级别不同
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2782,25): error C2146: 语法错误: 缺少“;”(在标识符“netBufferPoolHandle”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2782,25): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2783,15): warning C4142: "ULONG": 类型的良性重定义
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ntdef.h(706): message : 参见“ULONG”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2783,9): error C2370: “ULONG”: 重定义；不同的存储类
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ntdef.h(706): message : 参见“ULONG”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2783,15): error C2146: 语法错误: 缺少“;”(在标识符“allocateCloneFlags”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2783,15): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2784,28): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2784,28): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2785,4): error C2059: 语法错误:“)”
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2784,31): error C2040: “netBufferList”:“int **”与“int *”的间接寻址级别不同
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2785,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2791,24): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2791,24): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2792,15): warning C4142: "ULONG": 类型的良性重定义
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ntdef.h(706): message : 参见“ULONG”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2792,9): error C2370: “ULONG”: 重定义；不同的存储类
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ntdef.h(706): message : 参见“ULONG”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2792,15): error C2146: 语法错误: 缺少“;”(在标识符“freeCloneFlags”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2792,15): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2793,4): error C2059: 语法错误:“)”
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2793,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2802,27): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2802,27): error C2081: “NET_BUFFER_LIST”: 形参表中的名称非法
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2802,27): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2803,13): error C2040: “NDIS_HANDLE”:“int”与“PVOID”的间接寻址级别不同
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2803,25): error C2146: 语法错误: 缺少“;”(在标识符“netBufferAndNetBufferListPoolHandle”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2803,25): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2804,15): warning C4142: "ULONG": 类型的良性重定义
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ntdef.h(706): message : 参见“ULONG”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2804,9): error C2370: “ULONG”: 重定义；不同的存储类
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ntdef.h(706): message : 参见“ULONG”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2804,15): error C2146: 语法错误: 缺少“;”(在标识符“dataBackFill”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2804,15): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2805,15): warning C4142: "ULONG": 类型的良性重定义
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ntdef.h(706): message : 参见“ULONG”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2805,9): error C2370: “ULONG”: 重定义；不同的存储类
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ntdef.h(706): message : 参见“ULONG”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2805,15): error C2146: 语法错误: 缺少“;”(在标识符“flags”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2805,15): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2806,28): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2806,28): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2807,4): error C2059: 语法错误:“)”
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2807,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2823,27): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2823,27): error C2081: “NET_BUFFER_LIST”: 形参表中的名称非法
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2823,27): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2824,31): error C2146: 语法错误: 缺少“;”(在标识符“completionFn”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2824,31): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2825,13): error C2040: “HANDLE”:“int”与“void *”的间接寻址级别不同
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2825,20): error C2146: 语法错误: 缺少“;”(在标识符“completionContext”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2825,20): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2826,4): error C2059: 语法错误:“)”
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2826,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2838,27): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2838,27): error C2081: “NET_BUFFER_LIST”: 形参表中的名称非法
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2838,27): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2839,31): error C2146: 语法错误: 缺少“;”(在标识符“completionFn”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2839,31): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2840,13): error C2040: “HANDLE”:“int”与“void *”的间接寻址级别不同
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2840,20): error C2146: 语法错误: 缺少“;”(在标识符“completionContext”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2840,20): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2841,4): error C2059: 语法错误:“)”
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2841,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2849,27): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2849,27): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2850,15): warning C4142: "ULONG": 类型的良性重定义
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ntdef.h(706): message : 参见“ULONG”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2850,9): error C2370: “ULONG”: 重定义；不同的存储类
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ntdef.h(706): message : 参见“ULONG”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2850,15): error C2146: 语法错误: 缺少“;”(在标识符“headerIncludeHeaderLength”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2850,15): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2851,9): error C2371: “ADDRESS_FAMILY”: 重定义；不同的基类型
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(81): message : 参见“ADDRESS_FAMILY”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2851,24): error C2146: 语法错误: 缺少“;”(在标识符“addressFamily”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2851,24): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2852,15): error C2371: “UCHAR”: 重定义；不同的基类型
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ntdef.h(704): message : 参见“UCHAR”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2852,20): warning C4228: 使用了非标准扩展: 忽略声明符列表中逗号后面的限定符
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2852,20): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2852,20): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2853,15): error C2371: “UCHAR”: 重定义；不同的基类型
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ntdef.h(704): message : 参见“UCHAR”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2853,20): warning C4228: 使用了非标准扩展: 忽略声明符列表中逗号后面的限定符
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2853,20): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2853,20): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2854,9): error C2370: “IPPROTO”: 重定义；不同的存储类
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(494): message : 参见“IPPROTO”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2854,17): error C2146: 语法错误: 缺少“;”(在标识符“nextProtocol”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2854,17): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2855,13): error C2371: “UINT64”: 重定义；不同的基类型
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(82): message : 参见“UINT64”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2855,20): error C2146: 语法错误: 缺少“;”(在标识符“endpointHandle”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2855,20): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2856,19): error C2371: “WSACMSGHDR”: 重定义；不同的基类型
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(729): message : 参见“WSACMSGHDR”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2856,29): warning C4228: 使用了非标准扩展: 忽略声明符列表中逗号后面的限定符
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2856,29): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2856,29): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2857,15): warning C4142: "ULONG": 类型的良性重定义
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ntdef.h(706): message : 参见“ULONG”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2857,9): error C2370: “ULONG”: 重定义；不同的存储类
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ntdef.h(706): message : 参见“ULONG”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2857,15): error C2146: 语法错误: 缺少“;”(在标识符“controlDataLength”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2857,15): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2858,16): warning C4142: "UINT32": 类型的良性重定义
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(81): message : 参见“UINT32”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2858,9): error C2370: “UINT32”: 重定义；不同的存储类
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(81): message : 参见“UINT32”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2858,16): error C2146: 语法错误: 缺少“;”(在标识符“flags”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2858,16): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2859,15): error C2040: “PVOID”:“int”与“void *”的间接寻址级别不同
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2859,21): error C2146: 语法错误: 缺少“;”(在标识符“reserved”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2859,21): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2860,22): warning C4142: "IF_INDEX": 类型的良性重定义
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ifdef.h(171): message : 参见“IF_INDEX”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2860,13): error C2370: “IF_INDEX”: 重定义；不同的存储类
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ifdef.h(171): message : 参见“IF_INDEX”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2860,22): error C2146: 语法错误: 缺少“;”(在标识符“interfaceIndex”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2860,22): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2861,22): warning C4142: "IF_INDEX": 类型的良性重定义
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ifdef.h(171): message : 参见“IF_INDEX”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2861,13): error C2370: “IF_INDEX”: 重定义；不同的存储类
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ifdef.h(171): message : 参见“IF_INDEX”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2861,22): error C2146: 语法错误: 缺少“;”(在标识符“subInterfaceIndex”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2861,22): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2862,4): error C2059: 语法错误:“)”
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2862,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2877,27): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2877,27): error C2081: “NET_BUFFER_LIST”: 形参表中的名称非法
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2877,27): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2878,31): error C2146: 语法错误: 缺少“;”(在标识符“completionFn”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2878,31): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2879,13): error C2040: “HANDLE”:“int”与“void *”的间接寻址级别不同
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2879,20): error C2146: 语法错误: 缺少“;”(在标识符“completionContext”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2879,20): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2880,4): error C2059: 语法错误:“)”
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2880,4): fatal error C1003: 错误计数超过 100；正在停止编译
+         WFP_Network.c
+     1>G:\coding\MonitorNetDriver\WFP_Network.c(1,1): error C2220: 以下警告被视为错误
+     1>G:\coding\MonitorNetDriver\WFP_Network.c(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>G:\coding\MonitorNetDriver\WFP_Network.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9006,6): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9013,6): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9018,6): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9026,6): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9193,14): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9200,14): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9205,14): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9213,14): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9232,10): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9233,6): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(10333,10): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(10370,31): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2528,24): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2528,24): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2529,16): warning C4142: "UINT32": 类型的良性重定义
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(81): message : 参见“UINT32”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2529,9): error C2370: “UINT32”: 重定义；不同的存储类
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(81): message : 参见“UINT32”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2529,16): error C2146: 语法错误: 缺少“;”(在标识符“queryFlags”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2529,16): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2530,12): error C2371: “FWPS_PACKET_LIST_INFORMATION0”: 重定义；不同的基类型
+       F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2522): message : 参见“FWPS_PACKET_LIST_INFORMATION0”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2530,41): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2530,41): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2531,4): error C2059: 语法错误:“)”
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2531,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2552,30): error C2146: 语法错误: 缺少“)”(在标识符“netBufferList”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2552,30): error C2081: “PNET_BUFFER_LIST”: 形参表中的名称非法
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2552,30): error C2061: 语法错误: 标识符“netBufferList”
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2552,30): error C2059: 语法错误:“;”
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2553,4): error C2059: 语法错误:“)”
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2752,48): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2752,48): error C2081: “NET_BUFFER_LIST”: 形参表中的名称非法
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2752,48): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2753,30): error C2371: “BOOLEAN”: 重定义；不同的基类型
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ntdef.h(1603): message : 参见“BOOLEAN”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2753,38): error C2146: 语法错误: 缺少“;”(在标识符“dispatchLevel”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2753,38): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2754,25): error C2059: 语法错误:“)”
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2754,26): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2766,28): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2766,28): error C2081: “NET_BUFFER_LIST”: 形参表中的名称非法
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2766,28): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2767,4): error C2059: 语法错误:“)”
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2766,31): error C2040: “netBufferList”:“int **”与“int *”的间接寻址级别不同
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2767,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2773,24): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2773,24): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2774,4): error C2059: 语法错误:“)”
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2774,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2780,27): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2780,27): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2781,13): error C2040: “NDIS_HANDLE”:“int”与“PVOID”的间接寻址级别不同
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2781,25): error C2146: 语法错误: 缺少“;”(在标识符“netBufferListPoolHandle”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2781,25): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2782,13): error C2040: “NDIS_HANDLE”:“int”与“PVOID”的间接寻址级别不同
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2782,25): error C2146: 语法错误: 缺少“;”(在标识符“netBufferPoolHandle”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2782,25): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2783,15): warning C4142: "ULONG": 类型的良性重定义
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ntdef.h(706): message : 参见“ULONG”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2783,9): error C2370: “ULONG”: 重定义；不同的存储类
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ntdef.h(706): message : 参见“ULONG”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2783,15): error C2146: 语法错误: 缺少“;”(在标识符“allocateCloneFlags”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2783,15): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2784,28): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2784,28): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2785,4): error C2059: 语法错误:“)”
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2784,31): error C2040: “netBufferList”:“int **”与“int *”的间接寻址级别不同
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2785,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2791,24): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2791,24): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2792,15): warning C4142: "ULONG": 类型的良性重定义
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ntdef.h(706): message : 参见“ULONG”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2792,9): error C2370: “ULONG”: 重定义；不同的存储类
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ntdef.h(706): message : 参见“ULONG”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2792,15): error C2146: 语法错误: 缺少“;”(在标识符“freeCloneFlags”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2792,15): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2793,4): error C2059: 语法错误:“)”
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2793,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2802,27): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2802,27): error C2081: “NET_BUFFER_LIST”: 形参表中的名称非法
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2802,27): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2803,13): error C2040: “NDIS_HANDLE”:“int”与“PVOID”的间接寻址级别不同
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2803,25): error C2146: 语法错误: 缺少“;”(在标识符“netBufferAndNetBufferListPoolHandle”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2803,25): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2804,15): warning C4142: "ULONG": 类型的良性重定义
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ntdef.h(706): message : 参见“ULONG”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2804,9): error C2370: “ULONG”: 重定义；不同的存储类
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ntdef.h(706): message : 参见“ULONG”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2804,15): error C2146: 语法错误: 缺少“;”(在标识符“dataBackFill”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2804,15): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2805,15): warning C4142: "ULONG": 类型的良性重定义
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ntdef.h(706): message : 参见“ULONG”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2805,9): error C2370: “ULONG”: 重定义；不同的存储类
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ntdef.h(706): message : 参见“ULONG”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2805,15): error C2146: 语法错误: 缺少“;”(在标识符“flags”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2805,15): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2806,28): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2806,28): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2807,4): error C2059: 语法错误:“)”
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2807,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2823,27): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2823,27): error C2081: “NET_BUFFER_LIST”: 形参表中的名称非法
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2823,27): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2824,31): error C2146: 语法错误: 缺少“;”(在标识符“completionFn”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2824,31): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2825,13): error C2040: “HANDLE”:“int”与“void *”的间接寻址级别不同
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2825,20): error C2146: 语法错误: 缺少“;”(在标识符“completionContext”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2825,20): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2826,4): error C2059: 语法错误:“)”
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2826,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2838,27): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2838,27): error C2081: “NET_BUFFER_LIST”: 形参表中的名称非法
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2838,27): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2839,31): error C2146: 语法错误: 缺少“;”(在标识符“completionFn”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2839,31): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2840,13): error C2040: “HANDLE”:“int”与“void *”的间接寻址级别不同
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2840,20): error C2146: 语法错误: 缺少“;”(在标识符“completionContext”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2840,20): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2841,4): error C2059: 语法错误:“)”
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2841,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2849,27): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2849,27): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2850,15): warning C4142: "ULONG": 类型的良性重定义
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ntdef.h(706): message : 参见“ULONG”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2850,9): error C2370: “ULONG”: 重定义；不同的存储类
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ntdef.h(706): message : 参见“ULONG”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2850,15): error C2146: 语法错误: 缺少“;”(在标识符“headerIncludeHeaderLength”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2850,15): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2851,9): error C2371: “ADDRESS_FAMILY”: 重定义；不同的基类型
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(81): message : 参见“ADDRESS_FAMILY”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2851,24): error C2146: 语法错误: 缺少“;”(在标识符“addressFamily”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2851,24): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2852,15): error C2371: “UCHAR”: 重定义；不同的基类型
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ntdef.h(704): message : 参见“UCHAR”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2852,20): warning C4228: 使用了非标准扩展: 忽略声明符列表中逗号后面的限定符
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2852,20): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2852,20): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2853,15): error C2371: “UCHAR”: 重定义；不同的基类型
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ntdef.h(704): message : 参见“UCHAR”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2853,20): warning C4228: 使用了非标准扩展: 忽略声明符列表中逗号后面的限定符
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2853,20): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2853,20): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2854,9): error C2370: “IPPROTO”: 重定义；不同的存储类
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(494): message : 参见“IPPROTO”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2854,17): error C2146: 语法错误: 缺少“;”(在标识符“nextProtocol”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2854,17): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2855,13): error C2371: “UINT64”: 重定义；不同的基类型
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(82): message : 参见“UINT64”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2855,20): error C2146: 语法错误: 缺少“;”(在标识符“endpointHandle”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2855,20): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2856,19): error C2371: “WSACMSGHDR”: 重定义；不同的基类型
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ws2def.h(729): message : 参见“WSACMSGHDR”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2856,29): warning C4228: 使用了非标准扩展: 忽略声明符列表中逗号后面的限定符
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2856,29): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2856,29): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2857,15): warning C4142: "ULONG": 类型的良性重定义
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ntdef.h(706): message : 参见“ULONG”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2857,9): error C2370: “ULONG”: 重定义；不同的存储类
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ntdef.h(706): message : 参见“ULONG”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2857,15): error C2146: 语法错误: 缺少“;”(在标识符“controlDataLength”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2857,15): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2858,16): warning C4142: "UINT32": 类型的良性重定义
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(81): message : 参见“UINT32”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2858,9): error C2370: “UINT32”: 重定义；不同的存储类
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(81): message : 参见“UINT32”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2858,16): error C2146: 语法错误: 缺少“;”(在标识符“flags”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2858,16): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2859,15): error C2040: “PVOID”:“int”与“void *”的间接寻址级别不同
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2859,21): error C2146: 语法错误: 缺少“;”(在标识符“reserved”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2859,21): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2860,22): warning C4142: "IF_INDEX": 类型的良性重定义
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ifdef.h(171): message : 参见“IF_INDEX”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2860,13): error C2370: “IF_INDEX”: 重定义；不同的存储类
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ifdef.h(171): message : 参见“IF_INDEX”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2860,22): error C2146: 语法错误: 缺少“;”(在标识符“interfaceIndex”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2860,22): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2861,22): warning C4142: "IF_INDEX": 类型的良性重定义
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ifdef.h(171): message : 参见“IF_INDEX”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2861,13): error C2370: “IF_INDEX”: 重定义；不同的存储类
+       F:\Windows Kits\10\Include\10.0.18362.0\shared\ifdef.h(171): message : 参见“IF_INDEX”的声明
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2861,22): error C2146: 语法错误: 缺少“;”(在标识符“subInterfaceIndex”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2861,22): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2862,4): error C2059: 语法错误:“)”
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2862,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2877,27): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2877,27): error C2081: “NET_BUFFER_LIST”: 形参表中的名称非法
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2877,27): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2878,31): error C2146: 语法错误: 缺少“;”(在标识符“completionFn”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2878,31): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2879,13): error C2040: “HANDLE”:“int”与“void *”的间接寻址级别不同
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2879,20): error C2146: 语法错误: 缺少“;”(在标识符“completionContext”的前面)
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2879,20): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2880,4): error C2059: 语法错误:“)”
+     1>F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2880,4): fatal error C1003: 错误计数超过 100；正在停止编译
+         正在生成代码...
+     1>已完成生成项目“G:\coding\MonitorNetDriver\MonitorNetDriver.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+       “G:\coding\MonitorNetDriver\MonitorNetDriver.vcxproj”(Build 目标) (1) ->
+       (ClCompile 目标) -> 
+         G:\coding\MonitorNetDriver\WFP_Network.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9006,6): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+         F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9013,6): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+         F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9018,6): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+         F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9026,6): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+         F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9193,14): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+         F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9200,14): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+         F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9205,14): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+         F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9213,14): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+         F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9232,10): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+         F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9233,6): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+         F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(10333,10): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+         F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(10370,31): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2529,16): warning C4142: "UINT32": 类型的良性重定义
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2529,16): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2530,41): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2531,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2753,38): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2754,26): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2767,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2774,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2781,25): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2782,25): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2783,15): warning C4142: "ULONG": 类型的良性重定义
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2783,15): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2784,28): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2785,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2792,15): warning C4142: "ULONG": 类型的良性重定义
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2792,15): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2793,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2803,25): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2804,15): warning C4142: "ULONG": 类型的良性重定义
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2804,15): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2805,15): warning C4142: "ULONG": 类型的良性重定义
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2805,15): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2806,28): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2807,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2824,31): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2825,20): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2826,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2839,31): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2840,20): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2841,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2850,15): warning C4142: "ULONG": 类型的良性重定义
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2850,15): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2851,24): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2852,20): warning C4228: 使用了非标准扩展: 忽略声明符列表中逗号后面的限定符
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2852,20): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2853,20): warning C4228: 使用了非标准扩展: 忽略声明符列表中逗号后面的限定符
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2853,20): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2854,17): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2855,20): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2856,29): warning C4228: 使用了非标准扩展: 忽略声明符列表中逗号后面的限定符
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2856,29): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2857,15): warning C4142: "ULONG": 类型的良性重定义
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2857,15): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2858,16): warning C4142: "UINT32": 类型的良性重定义
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2858,16): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2859,21): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2860,22): warning C4142: "IF_INDEX": 类型的良性重定义
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2860,22): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2861,22): warning C4142: "IF_INDEX": 类型的良性重定义
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2861,22): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2862,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2878,31): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2879,20): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         G:\coding\MonitorNetDriver\WFP_Network.c(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         G:\coding\MonitorNetDriver\WFP_Network.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9006,6): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+         F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9013,6): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+         F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9018,6): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+         F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9026,6): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+         F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9193,14): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+         F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9200,14): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+         F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9205,14): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+         F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9213,14): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+         F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9232,10): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+         F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(9233,6): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+         F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(10333,10): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+         F:\Windows Kits\10\Include\10.0.18362.0\km\ndis.h(10370,31): warning C4201: 使用了非标准扩展: 无名称的结构/联合
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2529,16): warning C4142: "UINT32": 类型的良性重定义
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2529,16): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2530,41): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2531,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2753,38): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2754,26): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2767,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2774,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2781,25): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2782,25): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2783,15): warning C4142: "ULONG": 类型的良性重定义
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2783,15): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2784,28): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2785,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2792,15): warning C4142: "ULONG": 类型的良性重定义
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2792,15): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2793,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2803,25): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2804,15): warning C4142: "ULONG": 类型的良性重定义
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2804,15): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2805,15): warning C4142: "ULONG": 类型的良性重定义
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2805,15): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2806,28): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2807,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2824,31): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2825,20): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2826,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2839,31): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2840,20): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2841,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2850,15): warning C4142: "ULONG": 类型的良性重定义
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2850,15): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2851,24): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2852,20): warning C4228: 使用了非标准扩展: 忽略声明符列表中逗号后面的限定符
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2852,20): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2853,20): warning C4228: 使用了非标准扩展: 忽略声明符列表中逗号后面的限定符
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2853,20): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2854,17): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2855,20): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2856,29): warning C4228: 使用了非标准扩展: 忽略声明符列表中逗号后面的限定符
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2856,29): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2857,15): warning C4142: "ULONG": 类型的良性重定义
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2857,15): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2858,16): warning C4142: "UINT32": 类型的良性重定义
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2858,16): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2859,21): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2860,22): warning C4142: "IF_INDEX": 类型的良性重定义
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2860,22): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2861,22): warning C4142: "IF_INDEX": 类型的良性重定义
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2861,22): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2862,5): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2878,31): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2879,20): warning C4218: 使用了非标准扩展: 必须至少指定一个存储类或一个类型
+
+
+       “G:\coding\MonitorNetDriver\MonitorNetDriver.vcxproj”(Build 目标) (1) ->
+       (ClCompile 目标) -> 
+         G:\coding\MonitorNetDriver\WFP_Network.h(1,1): error C2220: 以下警告被视为错误
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2528,24): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2528,24): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2529,9): error C2370: “UINT32”: 重定义；不同的存储类
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2529,16): error C2146: 语法错误: 缺少“;”(在标识符“queryFlags”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2530,12): error C2371: “FWPS_PACKET_LIST_INFORMATION0”: 重定义；不同的基类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2530,41): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2531,4): error C2059: 语法错误:“)”
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2552,30): error C2146: 语法错误: 缺少“)”(在标识符“netBufferList”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2552,30): error C2081: “PNET_BUFFER_LIST”: 形参表中的名称非法
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2552,30): error C2061: 语法错误: 标识符“netBufferList”
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2552,30): error C2059: 语法错误:“;”
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2553,4): error C2059: 语法错误:“)”
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2752,48): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2752,48): error C2081: “NET_BUFFER_LIST”: 形参表中的名称非法
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2752,48): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2753,30): error C2371: “BOOLEAN”: 重定义；不同的基类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2753,38): error C2146: 语法错误: 缺少“;”(在标识符“dispatchLevel”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2754,25): error C2059: 语法错误:“)”
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2766,28): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2766,28): error C2081: “NET_BUFFER_LIST”: 形参表中的名称非法
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2766,28): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2767,4): error C2059: 语法错误:“)”
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2766,31): error C2040: “netBufferList”:“int **”与“int *”的间接寻址级别不同
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2773,24): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2773,24): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2774,4): error C2059: 语法错误:“)”
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2780,27): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2780,27): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2781,13): error C2040: “NDIS_HANDLE”:“int”与“PVOID”的间接寻址级别不同
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2781,25): error C2146: 语法错误: 缺少“;”(在标识符“netBufferListPoolHandle”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2782,13): error C2040: “NDIS_HANDLE”:“int”与“PVOID”的间接寻址级别不同
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2782,25): error C2146: 语法错误: 缺少“;”(在标识符“netBufferPoolHandle”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2783,9): error C2370: “ULONG”: 重定义；不同的存储类
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2783,15): error C2146: 语法错误: 缺少“;”(在标识符“allocateCloneFlags”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2784,28): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2785,4): error C2059: 语法错误:“)”
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2784,31): error C2040: “netBufferList”:“int **”与“int *”的间接寻址级别不同
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2791,24): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2791,24): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2792,9): error C2370: “ULONG”: 重定义；不同的存储类
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2792,15): error C2146: 语法错误: 缺少“;”(在标识符“freeCloneFlags”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2793,4): error C2059: 语法错误:“)”
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2802,27): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2802,27): error C2081: “NET_BUFFER_LIST”: 形参表中的名称非法
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2802,27): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2803,13): error C2040: “NDIS_HANDLE”:“int”与“PVOID”的间接寻址级别不同
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2803,25): error C2146: 语法错误: 缺少“;”(在标识符“netBufferAndNetBufferListPoolHandle”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2804,9): error C2370: “ULONG”: 重定义；不同的存储类
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2804,15): error C2146: 语法错误: 缺少“;”(在标识符“dataBackFill”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2805,9): error C2370: “ULONG”: 重定义；不同的存储类
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2805,15): error C2146: 语法错误: 缺少“;”(在标识符“flags”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2806,28): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2807,4): error C2059: 语法错误:“)”
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2823,27): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2823,27): error C2081: “NET_BUFFER_LIST”: 形参表中的名称非法
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2823,27): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2824,31): error C2146: 语法错误: 缺少“;”(在标识符“completionFn”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2825,13): error C2040: “HANDLE”:“int”与“void *”的间接寻址级别不同
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2825,20): error C2146: 语法错误: 缺少“;”(在标识符“completionContext”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2826,4): error C2059: 语法错误:“)”
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2838,27): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2838,27): error C2081: “NET_BUFFER_LIST”: 形参表中的名称非法
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2838,27): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2839,31): error C2146: 语法错误: 缺少“;”(在标识符“completionFn”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2840,13): error C2040: “HANDLE”:“int”与“void *”的间接寻址级别不同
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2840,20): error C2146: 语法错误: 缺少“;”(在标识符“completionContext”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2841,4): error C2059: 语法错误:“)”
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2849,27): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2849,27): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2850,9): error C2370: “ULONG”: 重定义；不同的存储类
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2850,15): error C2146: 语法错误: 缺少“;”(在标识符“headerIncludeHeaderLength”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2851,9): error C2371: “ADDRESS_FAMILY”: 重定义；不同的基类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2851,24): error C2146: 语法错误: 缺少“;”(在标识符“addressFamily”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2852,15): error C2371: “UCHAR”: 重定义；不同的基类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2852,20): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2853,15): error C2371: “UCHAR”: 重定义；不同的基类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2853,20): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2854,9): error C2370: “IPPROTO”: 重定义；不同的存储类
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2854,17): error C2146: 语法错误: 缺少“;”(在标识符“nextProtocol”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2855,13): error C2371: “UINT64”: 重定义；不同的基类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2855,20): error C2146: 语法错误: 缺少“;”(在标识符“endpointHandle”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2856,19): error C2371: “WSACMSGHDR”: 重定义；不同的基类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2856,29): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2857,9): error C2370: “ULONG”: 重定义；不同的存储类
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2857,15): error C2146: 语法错误: 缺少“;”(在标识符“controlDataLength”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2858,9): error C2370: “UINT32”: 重定义；不同的存储类
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2858,16): error C2146: 语法错误: 缺少“;”(在标识符“flags”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2859,15): error C2040: “PVOID”:“int”与“void *”的间接寻址级别不同
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2859,21): error C2146: 语法错误: 缺少“;”(在标识符“reserved”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2860,13): error C2370: “IF_INDEX”: 重定义；不同的存储类
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2860,22): error C2146: 语法错误: 缺少“;”(在标识符“interfaceIndex”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2861,13): error C2370: “IF_INDEX”: 重定义；不同的存储类
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2861,22): error C2146: 语法错误: 缺少“;”(在标识符“subInterfaceIndex”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2862,4): error C2059: 语法错误:“)”
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2877,27): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2877,27): error C2081: “NET_BUFFER_LIST”: 形参表中的名称非法
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2877,27): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2878,31): error C2146: 语法错误: 缺少“;”(在标识符“completionFn”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2879,13): error C2040: “HANDLE”:“int”与“void *”的间接寻址级别不同
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2879,20): error C2146: 语法错误: 缺少“;”(在标识符“completionContext”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2880,4): error C2059: 语法错误:“)”
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2880,4): fatal error C1003: 错误计数超过 100；正在停止编译
+         G:\coding\MonitorNetDriver\WFP_Network.c(1,1): error C2220: 以下警告被视为错误
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2528,24): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2528,24): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2529,9): error C2370: “UINT32”: 重定义；不同的存储类
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2529,16): error C2146: 语法错误: 缺少“;”(在标识符“queryFlags”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2530,12): error C2371: “FWPS_PACKET_LIST_INFORMATION0”: 重定义；不同的基类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2530,41): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2531,4): error C2059: 语法错误:“)”
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2552,30): error C2146: 语法错误: 缺少“)”(在标识符“netBufferList”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2552,30): error C2081: “PNET_BUFFER_LIST”: 形参表中的名称非法
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2552,30): error C2061: 语法错误: 标识符“netBufferList”
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2552,30): error C2059: 语法错误:“;”
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2553,4): error C2059: 语法错误:“)”
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2752,48): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2752,48): error C2081: “NET_BUFFER_LIST”: 形参表中的名称非法
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2752,48): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2753,30): error C2371: “BOOLEAN”: 重定义；不同的基类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2753,38): error C2146: 语法错误: 缺少“;”(在标识符“dispatchLevel”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2754,25): error C2059: 语法错误:“)”
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2766,28): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2766,28): error C2081: “NET_BUFFER_LIST”: 形参表中的名称非法
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2766,28): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2767,4): error C2059: 语法错误:“)”
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2766,31): error C2040: “netBufferList”:“int **”与“int *”的间接寻址级别不同
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2773,24): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2773,24): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2774,4): error C2059: 语法错误:“)”
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2780,27): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2780,27): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2781,13): error C2040: “NDIS_HANDLE”:“int”与“PVOID”的间接寻址级别不同
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2781,25): error C2146: 语法错误: 缺少“;”(在标识符“netBufferListPoolHandle”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2782,13): error C2040: “NDIS_HANDLE”:“int”与“PVOID”的间接寻址级别不同
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2782,25): error C2146: 语法错误: 缺少“;”(在标识符“netBufferPoolHandle”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2783,9): error C2370: “ULONG”: 重定义；不同的存储类
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2783,15): error C2146: 语法错误: 缺少“;”(在标识符“allocateCloneFlags”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2784,28): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2785,4): error C2059: 语法错误:“)”
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2784,31): error C2040: “netBufferList”:“int **”与“int *”的间接寻址级别不同
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2791,24): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2791,24): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2792,9): error C2370: “ULONG”: 重定义；不同的存储类
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2792,15): error C2146: 语法错误: 缺少“;”(在标识符“freeCloneFlags”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2793,4): error C2059: 语法错误:“)”
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2802,27): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2802,27): error C2081: “NET_BUFFER_LIST”: 形参表中的名称非法
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2802,27): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2803,13): error C2040: “NDIS_HANDLE”:“int”与“PVOID”的间接寻址级别不同
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2803,25): error C2146: 语法错误: 缺少“;”(在标识符“netBufferAndNetBufferListPoolHandle”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2804,9): error C2370: “ULONG”: 重定义；不同的存储类
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2804,15): error C2146: 语法错误: 缺少“;”(在标识符“dataBackFill”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2805,9): error C2370: “ULONG”: 重定义；不同的存储类
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2805,15): error C2146: 语法错误: 缺少“;”(在标识符“flags”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2806,28): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2807,4): error C2059: 语法错误:“)”
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2823,27): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2823,27): error C2081: “NET_BUFFER_LIST”: 形参表中的名称非法
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2823,27): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2824,31): error C2146: 语法错误: 缺少“;”(在标识符“completionFn”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2825,13): error C2040: “HANDLE”:“int”与“void *”的间接寻址级别不同
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2825,20): error C2146: 语法错误: 缺少“;”(在标识符“completionContext”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2826,4): error C2059: 语法错误:“)”
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2838,27): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2838,27): error C2081: “NET_BUFFER_LIST”: 形参表中的名称非法
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2838,27): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2839,31): error C2146: 语法错误: 缺少“;”(在标识符“completionFn”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2840,13): error C2040: “HANDLE”:“int”与“void *”的间接寻址级别不同
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2840,20): error C2146: 语法错误: 缺少“;”(在标识符“completionContext”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2841,4): error C2059: 语法错误:“)”
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2849,27): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2849,27): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2850,9): error C2370: “ULONG”: 重定义；不同的存储类
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2850,15): error C2146: 语法错误: 缺少“;”(在标识符“headerIncludeHeaderLength”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2851,9): error C2371: “ADDRESS_FAMILY”: 重定义；不同的基类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2851,24): error C2146: 语法错误: 缺少“;”(在标识符“addressFamily”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2852,15): error C2371: “UCHAR”: 重定义；不同的基类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2852,20): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2853,15): error C2371: “UCHAR”: 重定义；不同的基类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2853,20): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2854,9): error C2370: “IPPROTO”: 重定义；不同的存储类
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2854,17): error C2146: 语法错误: 缺少“;”(在标识符“nextProtocol”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2855,13): error C2371: “UINT64”: 重定义；不同的基类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2855,20): error C2146: 语法错误: 缺少“;”(在标识符“endpointHandle”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2856,19): error C2371: “WSACMSGHDR”: 重定义；不同的基类型
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2856,29): error C2143: 语法错误: 缺少“;”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2857,9): error C2370: “ULONG”: 重定义；不同的存储类
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2857,15): error C2146: 语法错误: 缺少“;”(在标识符“controlDataLength”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2858,9): error C2370: “UINT32”: 重定义；不同的存储类
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2858,16): error C2146: 语法错误: 缺少“;”(在标识符“flags”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2859,15): error C2040: “PVOID”:“int”与“void *”的间接寻址级别不同
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2859,21): error C2146: 语法错误: 缺少“;”(在标识符“reserved”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2860,13): error C2370: “IF_INDEX”: 重定义；不同的存储类
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2860,22): error C2146: 语法错误: 缺少“;”(在标识符“interfaceIndex”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2861,13): error C2370: “IF_INDEX”: 重定义；不同的存储类
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2861,22): error C2146: 语法错误: 缺少“;”(在标识符“subInterfaceIndex”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2862,4): error C2059: 语法错误:“)”
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2877,27): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2877,27): error C2081: “NET_BUFFER_LIST”: 形参表中的名称非法
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2877,27): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2878,31): error C2146: 语法错误: 缺少“;”(在标识符“completionFn”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2879,13): error C2040: “HANDLE”:“int”与“void *”的间接寻址级别不同
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2879,20): error C2146: 语法错误: 缺少“;”(在标识符“completionContext”的前面)
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2880,4): error C2059: 语法错误:“)”
+         F:\Windows Kits\10\Include\10.0.18362.0\km\fwpsk.h(2880,4): fatal error C1003: 错误计数超过 100；正在停止编译
+
+    133 个警告
+    206 个错误
+
+已用时间 00:00:01.23
